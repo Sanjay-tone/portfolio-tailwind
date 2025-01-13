@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/images/icons8-portfolio-64.png">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    #para {
+      animation-name: scale;
+      animation-duration: 2s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes scale {
+
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale();
+        opacity: 1;
+      }
+    }
+
+
+    #btn {
+      padding: 15px;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    #btn:hover {
+      background-color: #3e8e41;
+
+    }
+
+    #btn:active {
+      background-color: lightgreen;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+
+</head>
+
+<body style="background-color: #1D0845;">
+
+  <!-- nav bar -->
+  <nav class="bg-purple-800 p-4 flex items-center justify-between shadow-x2 sticky top-0">
+    <h1 class="text-white text-2xl font-semibold">Portfolio</h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-6 h-6 md:hidden text-white ">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-5 text-white hidden md:flex font-semibold">
+      <li>
+        <a class=" hover:text-black" href="./index.html">HOME</a>
+      </li>
+
+      <li>
+        <a class=" hover:text-black" href="./skill.html">SKILLS</a>
+      </li>
+
+      <li>
+        <a class=" hover:text-black" href="./contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+
+<!--side nav-->
+
+
+<section id="sidenav" class="bg-purple-700 fixed z-20 top-0 right-0 transition-all duration-700" style="width: 50%; height: 100vh; right:-50%;">
+  <div class="text-right p-5">
+    <p id="closenav" class="inline cursor-pointer">X</p>
+      
+  </div>
+
+  <ul class="flex flex-col p-5 gap-5 text-white   md:flex  font-semibold">
+    <li>
+      <a class=" hover:text-black" href="./index.html">HOME</a>
+    </li>
+
+    <li>
+      <a class=" hover:text-black" href="./skill.html">SKILLS</a>
+    </li>
+
+    <li>
+      <a class=" hover:text-black" href="./contact.html">CONTACT</a>
+    </li>
+  </ul>
+</section>
+
+
+  <!-- header section -->
+
+  <header class="p-7 flex justify-around mt-10">
+
+
+    <div>
+      <p class="mt-10 mb-1 text-l text-white">Hello, I am</p>
+
+      <h2 class="text-4xl  font-bold  text-yellow-400 ">Sanjay Vel </h2>
+
+      <P id="para" class="text-2xl text-yellow-400 font-bold mt-5">I'm a Front End  Developer</P>
+
+    </div>
+
+
+    <div class="p-5 md:block  md:flex hidden ">
+
+      <img src="/images/undraw_in-the-zone_07y7.svg" alt="plants" class="w-80">
+
+    </div>
+  </header>
+
+
+  <!--About us-->
+
+  <section class=" mt-10  text-center ">
+
+    <p class="text-white text-center text-3xl font-extrabold">ABOUT <span class= "text-red-600" >US</span></p>
+
+    <div class="md:flex">
+      <div class="border border-r-4 rounded-xl border-white p-2 m-6">
+
+
+        <h3 class="p-2 text-2xl text-yellow-400 font-serif ">MCA</h2>
+          <p class="text-white text-center ">I'M Pursuing MASTER OF COMPUTER APPLICATION in <span
+              class="text-red-600 font-semibold">REVA UNIVERSITY</span>,
+              <br>
+            A comprehensive postgraduate program focused on advanced computer. (2023-2025)</p>
+      </div>
+      <div class="md:flex">
+        <div class="border border-r-4 rounded-xl border-white p-2 m-6">
+
+
+          <h3 class="p-2 text-2xl  text-yellow-400 font-serif">B.Sc. CS</h2>
+            <p class="text-white">I completed a Bachelor of Science in Computer Science at <span class="text-red-600 font-semibold">Sri Ramakrishna College of
+              Arts and Science</span>, <br>A comprehensive graduate program focused on advanced computer science.</p>
+        </div>
+        <div class="md:flex">
+          <div class="border border-r-4 rounded-xl border-white p-2 m-6">
+
+            <h3 class="p-2 text-2xl  text-yellow-400 font-serif">MERN STACK</h2>
+              <h4 class="text-white">Skill Safari</h4>
+              <p class="text-white">Completed training in<span class="text-red-600">MongoDB, Express.js, React.js, and Node.js,</span>  building dynamic full-stack web applications.
+                </p>
+          </div>
+           
+
+
+  </section>
+
+
+  <!--footer-->
+
+  <section class="mt-10 flex justify-evenly">
+
+    <div>
+      <img src="/images/undraw_messaging_456i.svg" alt="" class="w-80 p-5">
+    </div>
+
+    <div class="p-5">
+      <a href="https://www.linkedin.com/in/sanjay-vel-63b0271a2/"><button id="btn">Connect with me!</button></a>
+    </div>
+
+
+
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
